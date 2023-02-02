@@ -123,11 +123,21 @@ const chonkinh = () => {
                          <br>
                          <br>
                          ${g.description} 
-                        `;
-          document.getElementById("glassesInfo").innerHTML = showThongTin;
+                         `;
         }
       });
+      document.getElementById("glassesInfo").innerHTML = showThongTin;
     });
   });
 };
 chonkinh();
+
+const removeGlasses = (value) => {
+  if (value) {
+    document.querySelector(".kinhMua").style.display = "block";
+  } else {
+    document.querySelector(".kinhMua").style.display = "none";
+    document.querySelector(".vglasses__info").style.display = "none";
+  }
+};
+window.removeGlasses = removeGlasses;
