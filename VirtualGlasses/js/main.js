@@ -115,7 +115,7 @@ const chonkinh = () => {
         if (g.id == item.id) {
           document.getElementById(
             "avatar"
-          ).innerHTML = `<img src="${g.virtualImg}" alt="">`;
+          ).innerHTML = `<img class='kinhMua' src="${g.virtualImg}" alt="">`;
           document.querySelector(".vglasses__info").style.display = "block";
           showThongTin = `${g.name} - ${g.brand} (${g.color})
                          <br>
